@@ -1,2 +1,3 @@
 # pause-menu-api
-try to find something skidded in here (you can't, i made it myself lmao)
+A basic api for the roblox pause menu.
+Open the pause menu before running a script that uses it.
