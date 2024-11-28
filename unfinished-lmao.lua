@@ -144,23 +144,4 @@ local guiapi = {
         return pagefuncs
     end
 }
-local examplepage = guiapi.AddPage("TestPage", "Zulu Client", false)
-local examplesubmenu = guiapi.AddPage("TestSubPage", "", true)
-local otherexamplepage = guiapi.AddPage("testpage2", "Another page test", false)
-examplepage.AddButton("Test 123", function()
-    print("Hello world!")
-end)
-examplepage.AddToggle("Test toggle", function(bool)
-    print("Test toggle clicked " .. tostring(bool))
-end)
-examplesubmenu.AddButton("Back", function()
-    examplepage.Show()
-end)
-examplepage.AddButton("Submenu Test", function()
-    examplesubmenu.Show()
-end)
-examplepage.AddButton("Non-Submenu test", function()
-    otherexamplepage.Show()
-end)
-print("initialized.")
 return guiapi
